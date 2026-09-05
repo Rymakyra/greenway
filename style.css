@@ -1,7 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden; /* Запрещает горизонтальный скролл */
 }
 
 header {
@@ -9,6 +14,12 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 15px 40px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .company_name h3 {
@@ -27,92 +38,81 @@ header {
   margin: 0;
 }
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.first_block{
+.first_block {
   background-image: url('img/leaf_background.png');
   background-size: cover;
   background-position: center;
-  padding: 30px;
+  padding: 40px 20px;
 }
 
 .title {
-  font-size: 60px;
-  margin-left: 30px;
+  font-size: 50px;
   color: white;
+  margin-top: 0;
 }
 
 .subtitle {
-  margin-left: 30px;
-  font-size: 30px;
+  font-size: 24px;
   color: #9dc599;
 }
 
 .services-button {
-  margin-left: 30px;
-  font-size: 30px;
-  padding: 20px;
+  font-size: 24px;
+  padding: 15px 30px;
   border-radius: 20px;
   background-color: #3d783d;
-  margin-bottom: 70px;
-  color: #9ac296;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 40px;
 }
 
 .second_block {
   display: flex;
-  background-size: cover;
-  background-position: center;
-  padding: 20px;
-  gap: 20px;
-  align-items: center;
   background-color: #f2f1eb;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
   margin-top: -35px;
-  padding-bottom: 40px;
+  padding: 40px 20px;
+  gap: 20px;
+  align-items: center;
   border-bottom: 4px solid #E0E0E0;
 }
 
-.section2_text{
+.single_leaf {
+  width: 80px;
+  height: auto;
+}
+
+.section2_text {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.single_leaf {
-  width: 100px;
-  padding-bottom: 100px;
-}
-
 .section1-title {
-  font-size: 40px;
+  font-size: 36px;
   margin: 0;
 }
 
 .section1-content {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .section1-link {
   color: #3c7a41;
   text-decoration: none;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
 }
 
-.second_section{
+.second_section {
   background-color: #f2f1eb;
   padding: 40px 20px;
 }
 
 .section2-title {
-  font-size: 40px;
+  font-size: 36px;
   margin-bottom: 30px;
 }
 
@@ -120,20 +120,17 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  /* max-width: 500px; */
 }
 
 .card_style {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
   text-align: center;
   border-radius: 30px;
   padding: 20px;
   background-color: #ffffff;
-  flex: 1 1 calc(50% - 10px);
-  box-sizing: border-box;
+  flex: 1 1 calc(50% - 20px);
 }
 
 .card_style img {
@@ -149,265 +146,170 @@ header {
   margin: 0 0 10px 0;
 }
 
-
-.single_leaf_second_section{
-  height: 100px;
-  width: 100px;
-  margin-bottom: 20px;
-}
-
-.recycle{
-  width: 100px;
-  height: 100px;
-  margin-bottom: 20px;
-}
-
-.lightning{
-  width: 100px;
-  height: 100px;
-  margin-bottom: 20px;
-}
-
-.hat{ 
-  width: 100px;
-  height: 100px;
-  margin-bottom: 20px;
-}
-
-.third_section{
+.third_section {
   background-color: #0F291F;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  padding: 40px;
-  align-items: center;
-  font-weight: 600;
+  padding: 40px 20px;
   margin-top: -20px;
-  gap: 30px;
-  flex: 1 1 100%;
+  color: white;
 }
 
 .section3-title {
-  font-size: 40px;
-  color: white;
-  /* text-align: center; */
-  padding: 20px;
+  font-size: 36px;
+  margin-top: 0;
 }
 
-.section3_first_part {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  color: white;
-  /* margin-left: 30px; */
-  margin-top: 20px;
-}
-
-.sub_title1 {
-  margin: 0;
-}
-
-.sub_title1-description {
-  margin: 0;
-}
-
-.section3_second_part {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  color: white;
-  margin-top: 20px;
-}
-
-.sub_title2 {
-  margin: 0;
-}
-
-.sub_title2-description {
-  margin: 0;
-}
-
-.sub_title3 {
-  margin: 0;
-}
-
-.sub_title3-description {
-  margin: 0;
-}
-
+.section3_first_part,
+.section3_second_part,
 .section3_third_part {
   display: flex;
   align-items: center;
   gap: 20px;
-  color: white;
   margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.section3_first_part_text {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.section3_second_part_text {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.section3_third_part_text {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
 }
 
 .fourth_section {
   background-color: #f2f1eb;
-  border-radius: 30px;
-  padding: 20px;
-  align-items: center;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  padding: 40px 20px;
   margin-top: -35px;
 }
 
 .section4-title {
-  font-size: 40px;
-  padding: 20px;
+  font-size: 36px;
   margin: 0;
 }
 
 .section4-content {
-  font-size: 20px;
-  padding: 20px;
-  margin: 0;
+  font-size: 18px;
+  margin: 20px 0;
 }
 
 .map-image {
-  width: 70%;
+  width: 100%;
+  max-width: 500px;
   border-radius: 20px;
-  margin-bottom: 30px;
 }
 
 .fifth_section {
   background-color: #0F291F;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
   margin-top: -35px;
-  padding: 40px 24px 50px 24px;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .fifth_section h2 {
-  font-size: 40px;
+  font-size: 36px;
   color: white;
-  padding: 20px;
-  margin: 0;
+  margin: 0 0 20px 0;
 }
 
 .feedback-form {
   width: 100%;
-
-  border-radius: 40px;
+  max-width: 500px;
+  border-radius: 30px;
   background-color: white;
-  margin: 0;
-  padding: 30px; 
-  box-sizing: border-box;
+  padding: 25px;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 }
 
-.form input {
-  padding: 10px;
-  border-radius: 20px;
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 15px;
   border: 1px solid #ccc;
   font-size: 16px;
 }
 
 .form-description {
   padding: 10px;
-  border-radius: 20px;
-  border: 1px solid #ccc;
-  font-size: 16px;
+  border-radius: 15px;
+  font-size: 14px;
   color: white;
   background-color: black;
-  align-items: center;
   text-align: center;
   text-transform: uppercase;
+}
+
+.form button {
+  padding: 12px;
+  border-radius: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #2b5c31;
+  color: white;
+  padding: 30px 20px;
 }
 
 .footer-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  padding: 20px;
-  background-color: #2b5c31;
-  color: white;
+  gap: 15px;
 }
 
+/* Исправление размеров соцсетей (убирает главную проблему с белой полосой) */
 .social-links {
   display: flex;
-  gap: 0px;
+  gap: 20px;
+  justify-content: center;
 }
 
 .social-links img {
-  width: 40px; 
+  width: 40px;
   height: 40px;
   object-fit: contain;
-  margin: 0 10px;
 }
 
+/* Мобильные стили для макета (до 768px) */
 @media (max-width: 768px) {
-  /* Зменшуємо шрифти та прибираємо великі відступи зліва */
+  header {
+    padding: 15px 20px;
+  }
+
   .title {
-    font-size: 36px;
-    margin-left: 0;
-    text-align: center;
+    font-size: 32px;
   }
 
   .subtitle {
-    font-size: 20px;
-    margin-left: 0;
-    text-align: center;
+    font-size: 18px;
   }
 
   .services-button {
-    font-size: 20px;
-    margin-left: 0;
-    display: block;
-    margin: 0 auto 40px auto;
+    font-size: 18px;
+    width: 100%;
   }
 
-  /* Вибудовуємо горизонтальні блоки в колонку */
-  .second_block, 
-  .section3_first_part, 
-  .section3_second_part, 
-  .section3_third_part,
-  header {
+  .second_block {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
   }
 
-  /* Прибираємо гігантський відступ у листка */
-  .single_leaf {
-    padding-bottom: 20px;
-  }
-
-  /* Картки послуг на всю ширину екрана */
   .card_style {
     flex: 1 1 100%;
+  }
+
+  .section3_first_part,
+  .section3_second_part,
+  .section3_third_part {
+    flex-direction: row;
   }
 }
