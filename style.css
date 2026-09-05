@@ -1,4 +1,88 @@
-/* h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; } */
+@media (max-width: 768px) {
+  
+  header {
+    padding: 15px 20px;
+  }
+  
+  .company_name h3 {
+    font-size: 20px;
+  }
+  
+  .company_name h5 {
+    font-size: 13px;
+  }
+
+  .first_block {
+    padding: 20px 15px;
+  }
+
+  .title {
+    font-size: 32px;
+    margin-left: 0;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    margin-left: 0;
+  }
+
+  .services-button {
+    font-size: 18px;
+    margin-left: 0;
+    padding: 12px 24px;
+    width: 100%; 
+  }
+
+  .second_block {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 20px;
+  }
+
+  .single_leaf {
+    padding-bottom: 0;
+    width: 60px;
+  }
+
+  .section1-title {
+    font-size: 28px;
+  }
+
+  .section1-content {
+    font-size: 16px;
+  }
+
+  .card_style {
+    flex: 1 1 100%;
+  }
+
+  .third_section {
+    padding: 30px 20px;
+  }
+
+  .section3-title, 
+  .section4-title, 
+  .fifth_section h2 {
+    font-size: 28px;
+    padding: 0 0 15px 0;
+  }
+
+  .map-image {
+    width: 100%;
+  }
+
+  .fifth_section {
+    padding: 30px 15px;
+  }
+
+  .feedback-form {
+    padding: 20px;
+  }
+
+  .form-description {
+    font-size: 13px;
+  }
+}
 
 body {
   font-family: 'Montserrat', sans-serif;
