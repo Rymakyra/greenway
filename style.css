@@ -448,3 +448,39 @@ header {
     font-size: 13px;
   }
 }
+
+/* Глобальное ограничение overflow, чтобы зафиксировать ширину окна */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* Запрещает горизонтальную прокрутку */
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box; /* Принудительно учитывает padding в ширине элементов */
+}
+
+/* Исправление подвала (убираем гигантские иконки соцсетей) */
+footer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer-content {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-links img {
+  width: 32px; /* Задаем четкий размер иконкам соцсетей */
+  height: 32px;
+  object-fit: contain;
+}
