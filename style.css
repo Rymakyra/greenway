@@ -6,14 +6,15 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Запрещает горизонтальный скролл */
+  overflow-x: hidden;
 }
 
+/* Шапка */
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 40px;
+  padding: 15px 20px;
 }
 
 .brand {
@@ -23,7 +24,7 @@ header {
 }
 
 .company_name h3 {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
   color: #0b3826;
@@ -31,221 +32,256 @@ header {
 }
 
 .company_name h5 {
-  font-size: 19px;
+  font-size: 14px;
   font-weight: 600;
   text-transform: lowercase;
   color: #557859;
   margin: 0;
 }
 
+/* Первый блок */
 .first_block {
   background-image: url('img/leaf_background.png');
   background-size: cover;
   background-position: center;
-  padding: 40px 20px;
+  padding: 40px 20px 60px 20px;
+  text-align: left; /* Выравнивание по левому краю */
 }
 
 .title {
-  font-size: 50px;
+  font-size: 32px;
   color: white;
-  margin-top: 0;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
 }
 
 .subtitle {
-  font-size: 24px;
+  font-size: 18px;
   color: #9dc599;
+  margin: 0 0 30px 0;
+  font-weight: 400;
+  line-height: 1.4;
 }
 
 .services-button {
-  font-size: 24px;
-  padding: 15px 30px;
-  border-radius: 20px;
+  font-size: 18px;
+  padding: 14px 28px;
+  border-radius: 15px;
   background-color: #3d783d;
-  color: #ffffff;
+  color: #9ac296;
   border: none;
   cursor: pointer;
-  margin-bottom: 40px;
 }
 
+/* Второй блок (Про нас) */
 .second_block {
   display: flex;
+  flex-direction: column;
+  text-align: left;
   background-color: #f2f1eb;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   margin-top: -35px;
-  padding: 40px 20px;
-  gap: 20px;
-  align-items: center;
+  padding: 30px 20px;
+  gap: 15px;
   border-bottom: 4px solid #E0E0E0;
 }
 
 .single_leaf {
-  width: 80px;
+  width: 60px;
   height: auto;
 }
 
-.section2_text {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
 .section1-title {
-  font-size: 36px;
-  margin: 0;
+  font-size: 28px;
+  margin: 0 0 10px 0;
+  color: #000;
 }
 
 .section1-content {
-  font-size: 18px;
+  font-size: 16px;
+  margin: 0 0 15px 0;
+  line-height: 1.5;
 }
 
 .section1-link {
   color: #3c7a41;
   text-decoration: none;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
 }
 
+/* Третий блок (Наши услуги) */
 .second_section {
   background-color: #f2f1eb;
-  padding: 40px 20px;
+  padding: 30px 20px;
+  text-align: left;
 }
 
 .section2-title {
-  font-size: 36px;
-  margin-bottom: 30px;
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
 .cards {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: column; /* На мобильных карточки идут друг за другом */
+  gap: 15px;
 }
 
 .card_style {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  border-radius: 30px;
+  align-items: flex-start; /* Элементы внутри карточки слева */
+  text-align: left;
+  border-radius: 20px;
   padding: 20px;
   background-color: #ffffff;
-  flex: 1 1 calc(50% - 20px);
 }
 
 .card_style img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .card_style h3 {
+  font-size: 20px;
   font-weight: 700;
   color: #000000;
   margin: 0 0 10px 0;
 }
 
+.card_style p {
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Четвертый блок (Почему выбирают нас) */
 .third_section {
   background-color: #0F291F;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  padding: 40px 20px;
+  padding: 30px 20px;
   margin-top: -20px;
   color: white;
+  text-align: left;
 }
 
 .section3-title {
-  font-size: 36px;
-  margin-top: 0;
+  font-size: 28px;
+  margin: 0 0 20px 0;
 }
 
 .section3_first_part,
 .section3_second_part,
 .section3_third_part {
   display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-top: 20px;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
 }
 
+.section3_first_part img,
+.section3_second_part img,
+.section3_third_part img {
+  width: 40px;
+  height: auto;
+}
+
+.sub_title1, .sub_title2, .sub_title3 {
+  font-size: 18px;
+  margin: 0 0 5px 0;
+}
+
+.sub_title1-description,
+.sub_title2-description,
+.sub_title3-description {
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Пятый блок (Контакты) */
 .fourth_section {
   background-color: #f2f1eb;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  padding: 40px 20px;
+  padding: 30px 20px;
   margin-top: -35px;
+  text-align: left;
 }
 
 .section4-title {
-  font-size: 36px;
-  margin: 0;
+  font-size: 28px;
+  margin: 0 0 15px 0;
 }
 
 .section4-content {
-  font-size: 18px;
-  margin: 20px 0;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
 }
 
 .map-image {
   width: 100%;
-  max-width: 500px;
   border-radius: 20px;
 }
 
+/* Шестой блок (Отзыв) */
 .fifth_section {
   background-color: #0F291F;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   margin-top: -35px;
-  padding: 40px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 30px 20px;
+  text-align: left;
 }
 
 .fifth_section h2 {
-  font-size: 36px;
+  font-size: 28px;
   color: white;
   margin: 0 0 20px 0;
 }
 
 .feedback-form {
   width: 100%;
-  max-width: 500px;
-  border-radius: 30px;
+  border-radius: 25px;
   background-color: white;
-  padding: 25px;
+  padding: 20px;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 12px;
 }
 
 .form input,
 .form textarea {
   width: 100%;
   padding: 12px;
-  border-radius: 15px;
+  border-radius: 12px;
   border: 1px solid #ccc;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .form-description {
   padding: 10px;
-  border-radius: 15px;
-  font-size: 14px;
+  border-radius: 12px;
+  font-size: 12px;
   color: white;
   background-color: black;
   text-align: center;
   text-transform: uppercase;
+  margin: 0 0 10px 0;
 }
 
 .form button {
   padding: 12px;
-  border-radius: 15px;
+  border-radius: 12px;
   background-color: #007bff;
   color: white;
   border: none;
@@ -253,63 +289,27 @@ header {
   cursor: pointer;
 }
 
+/* Футер */
 footer {
   background-color: #2b5c31;
   color: white;
-  padding: 30px 20px;
+  padding: 25px 20px;
 }
 
 .footer-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start; /* Соцсети выровнены по левому краю */
   gap: 15px;
 }
 
-/* Исправление размеров соцсетей (убирает главную проблему с белой полосой) */
 .social-links {
   display: flex;
-  gap: 20px;
-  justify-content: center;
+  gap: 15px;
 }
 
 .social-links img {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   object-fit: contain;
-}
-
-/* Мобильные стили для макета (до 768px) */
-@media (max-width: 768px) {
-  header {
-    padding: 15px 20px;
-  }
-
-  .title {
-    font-size: 32px;
-  }
-
-  .subtitle {
-    font-size: 18px;
-  }
-
-  .services-button {
-    font-size: 18px;
-    width: 100%;
-  }
-
-  .second_block {
-    flex-direction: column;
-    text-align: left;
-  }
-
-  .card_style {
-    flex: 1 1 100%;
-  }
-
-  .section3_first_part,
-  .section3_second_part,
-  .section3_third_part {
-    flex-direction: row;
-  }
 }
