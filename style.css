@@ -1,7 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 header {
@@ -44,6 +49,7 @@ header {
   font-size: 60px;
   margin-left: 30px;
   color: white;
+  word-wrap: break-word;
 }
 
 .subtitle {
@@ -148,7 +154,6 @@ header {
   color: #000000;
   margin: 0 0 10px 0;
 }
-
 
 .single_leaf_second_section{
   height: 100px;
@@ -319,7 +324,6 @@ header {
   background-color: white;
   margin: 0;
   padding: 30px; 
-  box-sizing: border-box;
 }
 
 .form {
@@ -366,4 +370,41 @@ header {
   width: 32px;
   height: 32px;
   object-fit: contain;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+  header {
+    padding: 15px 20px;
+  }
+
+  .first_block {
+    padding: 20px 15px 40px 15px;
+  }
+
+  .title {
+    font-size: 32px;
+    margin-left: 0;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    margin-left: 0;
+  }
+
+  .services-button {
+    font-size: 18px;
+    margin-left: 0;
+    padding: 12px 20px;
+    margin-bottom: 30px;
+  }
+
+  .card_style {
+    flex: 1 1 100%;
+  }
+
+  .map-image {
+    width: 100%;
+  }
+}
 }
