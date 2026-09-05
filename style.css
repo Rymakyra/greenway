@@ -369,3 +369,45 @@ header {
   object-fit: contain;
   margin: 0 10px;
 }
+
+@media (max-width: 768px) {
+  /* Зменшуємо шрифти та прибираємо великі відступи зліва */
+  .title {
+    font-size: 36px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .services-button {
+    font-size: 20px;
+    margin-left: 0;
+    display: block;
+    margin: 0 auto 40px auto;
+  }
+
+  /* Вибудовуємо горизонтальні блоки в колонку */
+  .second_block, 
+  .section3_first_part, 
+  .section3_second_part, 
+  .section3_third_part,
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Прибираємо гігантський відступ у листка */
+  .single_leaf {
+    padding-bottom: 20px;
+  }
+
+  /* Картки послуг на всю ширину екрана */
+  .card_style {
+    flex: 1 1 100%;
+  }
+}
