@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -24,7 +25,17 @@
         <h5>s o l u t i o n s</h5>
       </div>
     </div>
-    <div class="navigation">----<br>----<br>----</div>
+    <div class="navigation" id="navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav_menu" id="navMenu">
+      <li><a href="#services">Послуги</a></li>
+      <li><a href="#why_us">Про нас</a></li>
+      <li><a href="#contacts">Контакти</a></li>
+      <li><a href="#feedback">Відгуки</a></li>
+    </ul>
   </header>
 
   <!-- first block -->
@@ -56,7 +67,7 @@
 
   <section class="second_section">
     <div>
-      <h2 class="section2-title">Наші послуги <br>
+      <h2 class="section2-title" id="services">Наші послуги <br>
         -----</h2>
     </div>
     <div class="cards">
@@ -104,7 +115,7 @@
   </section>
 
   <section class="third_section">
-    <h2 class="section3-title">Чому обирають нас</h2>
+    <h2 class="section3-title" id="why_us">Чому обирають нас</h2>
     <div class="section3_first_part">
       <div><img class="security" src="img/logo_security.png"></div>
       <div class="section3_first_part_text">
@@ -128,7 +139,7 @@
     </div>
   </section>
   <section class="fourth_section">
-    <h2 class="section4-title">Зв’яжіться з нами</h2>
+    <h2 class="section4-title" id="contacts">Зв’яжіться з нами</h2>
     <p class="section4-content">
       +38 (067) 123 45 67<br>
       info@greenway.ua<br>
@@ -139,7 +150,7 @@
     </div>
   </section>
   <section class="fifth_section">
-    <h2 class="section5-title">Написати відгук</h2>
+    <h2 class="section5-title" id="feedback">Написати відгук</h2>
     <div class="feedback-form">
       <form class="form">
         <p class="form-description">Ваш відгук допоможе нам покращити якість послуг!</p>
